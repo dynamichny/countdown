@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  background: #d44e28;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 480px;
+  position: relative;
+}
+main h1 {
+  color: #242021;
+}
+main .countdown {
+  background: #2cbcb2;
+  display: flex;
+  width: 100%;
+  height: 85%;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+}
+main .countdown form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main form > div {
+  margin: 20px 30px 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+main form > div input {
+  width: 30px;
+  transform: scale(1.5);
+  text-align: center;
+  background: #2cbcb2;
+  border: 3px solid white;
+  color: white;
+  font-weight: bold;
+  padding: 4px;
+}
+main form > div input::placeholder {
+  color: white;
+}
+main form > div input:focus {
+  transition: border 0.15s;
+  border: 3px solid #d44e28;
+}
+main button {
+  margin: 0;
+  justify-self: center;
+  margin: 20px;
+  background: none;
+  padding: 10px 20px 10px 20px;
+  border: 3px solid white;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+.countingWithBtn {
+  display: flex;
+  flex-direction: column;
+}
+
+.counting {
+  display: flex;
+}
+.counting > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 5px 0 5px;
+}
+.counting > div p {
+  margin: 10px;
+}
+.counting > div *:first-child {
+  font-size: 2.3rem;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.done {
+  text-align: center;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 479px) {
+  main {
+    height: 100%;
+  }
+
+  .counting {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
